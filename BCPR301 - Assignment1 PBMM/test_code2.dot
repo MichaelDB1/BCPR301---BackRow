@@ -1,0 +1,10 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{test_code2.A|\l|}", shape="record"];
+"1" [label="{test_code2.B|another\lattribute\l|__init__()\l}", shape="record"];
+"2" [label="{test_code2.C|\l|}", shape="record"];
+"1" -> "0" [arrowhead="empty", arrowtail="none"];
+"0" -> "1" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="another", style="solid"];
+"2" -> "1" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="attribute", style="solid"];
+}
